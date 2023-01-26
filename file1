@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/grid1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="img"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.46"
+        app:srcCompat="@drawable/grid2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/app_name"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cross1"
+        android:layout_width="141dp"
+        android:layout_height="116dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cross2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35"
+        app:srcCompat="@drawable/cc"
+        android:tag="1"/>
+
+    <ImageView
+        android:id="@+id/cross9"
+        android:layout_width="141dp"
+        android:layout_height="116dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785"
+        android:tag="9"
+        app:srcCompat="@drawable/cc" />
+
+    <ImageView
+        android:id="@+id/cross6"
+        android:layout_width="141dp"
+        android:layout_height="116dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563"
+        android:tag="6"
+        app:srcCompat="@drawable/cc" />
+
+    <ImageView
+        android:id="@+id/cross3"
+        android:layout_width="141dp"
+        android:layout_height="116dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35"
+        android:tag="3"
+        app:srcCompat="@drawable/cc" />
+
+    <ImageView
+        android:id="@+id/cross4"
+        android:layout_width="141dp"
+        android:layout_height="116dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cross5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tag="4"
+        app:layout_constraintVertical_bias="0.563"
+        app:srcCompat="@drawable/cc" />
+
+    <ImageView
+        android:id="@+id/cross5"
+        android:layout_width="141dp"
+        android:layout_height="116dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/zero5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563"
+        android:tag="5"
+        app:srcCompat="@drawable/cc" />
+
+    <ImageView
+        android:id="@+id/cross7"
+        android:layout_width="141dp"
+        android:layout_height="116dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tag="7"
+        app:layout_constraintVertical_bias="0.783"
+        app:srcCompat="@drawable/cc" />
+
+    <ImageView
+        android:id="@+id/cross8"
+        android:layout_width="141dp"
+        android:layout_height="116dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/cross7"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tag="8"
+        app:layout_constraintVertical_bias="0.782"
+        app:srcCompat="@drawable/cc" />
+
+    <ImageView
+        android:id="@+id/cross2"
+        android:layout_width="141dp"
+        android:layout_height="116dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        android:tag="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cross3"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35"
+        app:srcCompat="@drawable/cc" />
+
+    <ImageView
+        android:id="@+id/zero6"
+        android:layout_width="115dp"
+        android:layout_height="130dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        android:tag="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575"
+        app:srcCompat="@drawable/zero2" />
+
+    <ImageView
+        android:id="@+id/zero9"
+        android:layout_width="115dp"
+        android:layout_height="130dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        android:tag="9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799"
+        app:srcCompat="@drawable/zero2" />
+
+    <ImageView
+        android:id="@+id/zero8"
+        android:layout_width="115dp"
+        android:layout_height="130dp"
+        android:visibility="invisible"
+        android:onClick="playertap"
+        android:tag="8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799"
+        app:srcCompat="@drawable/zero2" />
+
+    <ImageView
+        android:id="@+id/zero7"
+        android:layout_width="115dp"
+        android:layout_height="130dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        android:tag="7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/zero2" />
+
+    <ImageView
+        android:id="@+id/zero1"
+        android:layout_width="115dp"
+        android:layout_height="130dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        android:tag="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.335"
+        app:srcCompat="@drawable/zero2" />
+
+    <ImageView
+        android:id="@+id/zero5"
+        android:layout_width="115dp"
+        android:layout_height="130dp"
+        android:onClick="playertap"
+        android:visibility="invisible"
+        android:tag="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575"
+        app:srcCompat="@drawable/zero2" />
+
+    <ImageView
+        android:id="@+id/zero4"
+        android:layout_width="115dp"
+        android:layout_height="130dp"
+        android:visibility="invisible"
+        android:onClick="playertap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/zero6"
+        android:tag="4"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575"
+        app:srcCompat="@drawable/zero2" />
+
+    <ImageView
+        android:id="@+id/zero3"
+        android:layout_width="115dp"
+        android:layout_height="130dp"
+        android:visibility="invisible"
+        android:onClick="playertap"
+        android:tag="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334"
+        app:srcCompat="@drawable/zero2" />
+
+    <ImageView
+        android:id="@+id/zero2"
+        android:layout_width="115dp"
+        android:onClick="playertap"
+        android:layout_height="130dp"
+        android:visibility="invisible"
+        android:tag="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/zero6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334"
+        app:srcCompat="@drawable/zero2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
